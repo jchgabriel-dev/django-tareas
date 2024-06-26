@@ -1,0 +1,122 @@
+form.FormRegular {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 30px;
+
+}
+
+form.FormRegular input[type=text], form.FormRegular  input[type=password] {
+    width: 97%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+form.FormRegular textarea{
+    width: 97%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #f1f1f1;
+    border: none;
+    display: inline-block;
+
+}
+
+form.FormRegular button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 20px;
+  }
+
+  
+form.FormRegular button:hover {
+    opacity:1;
+}
+
+table.TableList {
+    border-collapse: collapse;
+    width: 95%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 40px;
+}
+
+
+table.TableList th,  table.TableList td {    
+    text-align: left;
+    border-bottom: 2px solid gray;
+}
+
+tr.header {
+    background-color: #000000;
+    color: #ffffff;    
+}
+
+tr.header th {
+    padding: 10px;
+}
+
+table.TableList  tr:hover:not(tr.header) {
+    background-color: #D6EEEE;
+}
+
+
+
+table.TableList  a {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #04AA6D;  
+    transition-duration: 300ms;  
+    text-decoration: none;
+}
+
+table.TableList  a:hover {
+    background-color: #000000;    
+}
+
+h1.TableTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 40px;
+}
+
+.label {
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.danger {background-color: #f44336;} 
+.other {background-color: #e7e7e7; color: black;}
+
+
+form.FormRegular2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 30px;
+}
+
+form.FormRegular2 button {
+    background-color: #000;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 20px;
+  }
+
+  
+form.FormRegular2 button:hover {
+    opacity:1;
+}

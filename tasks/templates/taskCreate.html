@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <form class="FormRegular" action="/tasks/create/" method="POST">
+        <h1> Crear Tarea </h1>
+
+        {% csrf_token %}
+        {{form}}
+        <button>
+            Crear    
+        </button>
+    </form>
+{% endblock %}
+    

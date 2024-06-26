@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJANGO-CRUD</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/body.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+
+</head>
+<body>    
+
+    <div class="HeaderWrapper">
+        <header class="container">
+        
+            <nav>
+                <ul class="NavUl">                                        
+                    <li class="NavLi"><a class="active" href="/"> Inicio</a></li>                                        
+                    
+                    {% if user.is_authenticated %}
+                    <li class="NavLi"><a href="/tasks">Tareas</a></li>
+                    <li class="NavLi"><a href="{% url 'TaskCompleteUrl' %}">Completado</a></li>        
+                    <li class="NavLi"><a href="{% url 'taskCreate' %}">Crear</a></li>
+                    <li class="NavLi"><a class="signout" href="/logout">Salir</a></li>
+
+                    {% else %}
+
+                    <li class="NavLi"><a href="/signup"> Registrarse</a></li>
+                    <li class="NavLi"><a  href="/signin"> Ingresar </a></li>
+                    {% endif %}                                
+                </ul>
+            </nav>
+        </header>        
+    </div>
+    
+    
+    {% block content %}
+        
+    {% endblock %}            
+</body>
+</html>

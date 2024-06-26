@@ -1,0 +1,35 @@
+ul.NavUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.NavLi {
+    float: left;           
+    margin-right: 20px;     
+}
+
+li.NavLi a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;        
+    padding: 20px 19px;    
+    text-decoration: none; 
+    color: white;         
+}
+
+li.NavLi a:hover:not(a.active) {
+    background-color: #111;
+}
+
+
+
+
+a.active {
+    background-color: #04AA6D;
+}
+
+a.signout {
+    background-color: #ee1414;
+}

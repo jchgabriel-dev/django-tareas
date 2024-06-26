@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<h1 class="TableTitle"> Tareas completadas </h1>
+
+<table class="TableList">
+
+    <tr class="header">
+        <th>Titulo</th>
+        <th>Importante</th>
+        
+        <th>Completado</th>
+
+    </tr>
+    {% for task in tasks %}
+    <tr>
+        <th><a href="{% url 'taskDetail' task.id %}" >{{ task.title }}</a></th>
+        
+        
+        {% if  task.important == True %}
+        <th><span class="label danger">Importante</span>
+        </th>
+        {% else %}
+        <th><span class="label other">No importante</span>
+        </th>
+        {% endif %}
+            
+        <th>{{task.dateCompleted|date:'M j Y:i'}}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock  %}
+    
+
+        
+
